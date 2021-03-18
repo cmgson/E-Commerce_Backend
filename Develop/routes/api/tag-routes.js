@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 
   try {
     const tagData = await Tag.findAll({
-      include: [{ model: Product, through: ProductTag, as: 'tags_for_products'}]
+      include: [{ model: Product, through: ProductTag, as: 'tagsProduct'}]
     })
     res.status(200).json(tagData)
   } catch (err) {
@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
 
   try {
     const tagData = await Tag.findByPk(req.params.id, {
-      include: [{ model: Product, through: ProductTag}]
+      include: [{ model: Product, through: ProductTag, as: 'tagsProduct'}]
   })
   if(!tagData) {
     res.status(404).json({ message: 'no tag exists'});
@@ -54,9 +54,7 @@ router.put('/:id', async (req, res) => {
       where: {
         id: req.params.id,
       }
-    }
-     
-    );
+    });
     if (!tagData) {
       res.status(404).json({ message: 'tag does not exist'})
       return;
