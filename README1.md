@@ -55,10 +55,10 @@ github is listed in the bottom of the readme along with licence information at t
 ## <div align ='center'> <a name="tests"></a> **Tests** </div>
 
 --- 
-<iframe src="https://drive.google.com/file/d/1MK5d-fF256-TndGCEVZylfIwdsZdyh3Q/preview" width="640" height="480"></iframe>
-no tests run, there is a short video with a demo and tests included here.
-If the embed isnt working here is a link to the demo video.
 
+no tests run, there is a short video with a demo and tests included here.
+
+### Here is a link to the demo video 
 (https://drive.google.com/file/d/1MK5d-fF256-TndGCEVZylfIwdsZdyh3Q/view)
 
 
